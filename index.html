@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Thời Trang</title>
+
+  <!-- Font đẹp -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f48c.svg" alt="Logo Shop">
+    <span>SHOP THỜI TRANG Ngoccomeback</span>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Trang Chủ</a>
+    <a href="#">Sản Phẩm</a>
+    <a href="#">Liên Hệ</a>
+    <a href="#">Giỏ Hàng</a>
+    <button id="open-cart-btn" class="cart-toggle">🛒 Mở Giỏ Hàng</button>
+  </nav>
+
+  <!-- Danh sách sản phẩm -->
+  <section class="products">
+    <div class="product">
+      <img src="https://product.hstatic.net/1000360022/product/id-017150a_d905db4fb69a458683afcd2244af3647_1024x1024.jpg" alt="Áo Thun">
+      <h3>Áo Thun Nam</h3>
+      <p class="price">99.000₫</p>
+      <button class="add-to-cart" data-name="Áo Thun Nam" data-price="99000">Thêm vào giỏ</button>
+    </div>
+    <div class="product">
+      <img src="https://image.hm.com/assets/hm/19/4f/194fe11836787537dec0c021ca3778c2356aa965.jpg?imwidth=1260" alt="Váy Nữ">
+      <h3>Váy Nữ</h3>
+      <p class="price">299.000₫</p>
+      <button class="add-to-cart" data-name="Váy Nữ" data-price="299000">Thêm vào giỏ</button>
+    </div>
+    <div class="product">
+      <img src="data:image/webp;base64,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" alt="Quần Jean">
+      <h3>Quần Jean</h3>
+      <p class="price">399.000₫</p>
+      <button class="add-to-cart" data-name="Quần Jean" data-price="399000">Thêm vào giỏ</button>
+    </div>
+  </section>
+
+  <!-- Giỏ hàng -->
+  <div class="cart-container"id="cart-sidebar">
+    <div class="cart-header">
+    <h2>🛒 Giỏ hàng</h2>
+    <button id="close-cart-btn">X</button>
+  </div>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Tổng: 0₫</p>
+    <button id="clear-cart" class="cart-btn">🗑 Xoá tất cả</button>
+    <button id="checkout" class="cart-btn checkout-btn">💳 Thanh toán</button>
+  </div>
+
+  <!-- Popup thanh toán -->
+  <div id="checkout-popup" class="checkout-popup">
+    <div class="popup-content">
+      <h3>✅ Thanh toán thành công!</h3>
+      <p>Cảm ơn bạn đã mua hàng.</p>
+      <button id="close-popup">Đóng</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Shop Thời Trang. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
